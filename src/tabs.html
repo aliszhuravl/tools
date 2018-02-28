@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    //= html/_head.html
+    <title>L - library</title>
+</head>
+<body>
+<div class="page-container page-main">
+    //= html/_header.html
+    <main class="page">
+        <div class="page__inner">
+            <section class="page__item">
+                <h3 style="text-align: center;">Табы</h3>
+            </section>
+            <section class="page__item">
+                <div class="category__inner">
+                    <div class="category__item element_item">
+                        <div class="category__content">
+                            <div class="category__header">
+                                <h3 style="text-align: center;">Табы</h3>
+                            </div>
+                            <div class="category__body">
+                                <div class="code__inner">
+
+                                    <div class="tabs tabs-cards">
+                                        <ul class="tabs__buttons">
+                                            <li class="tabs__btn">HTML</li>
+                                            <li class="tabs__btn tabs__btn_active">SCSS</li>
+                                            <li class="tabs__btn">JS</li>
+                                        </ul>
+                                        <div class="tabs__content code_content">
+                                            <div class="tabs__item">
+<pre style="background:#f9f9f9;color:#080808">
+
+
+&lt;<span style="color:#bf4f24">div</span> <span style="color:#bf4f24">class</span>=<span style="color:#0b6125">"tabs tabs-cards"</span>>
+    &lt;<span style="color:#bf4f24">ul</span> <span style="color:#bf4f24">class</span>=<span style="color:#0b6125">"tabs__buttons"</span>>
+        &lt;<span style="color:#bf4f24">li</span> <span style="color:#bf4f24">class</span>=<span style="color:#0b6125">"tabs__btn active"</span>>&lt;/<span style="color:#bf4f24">li</span>>
+        &lt;<span style="color:#bf4f24">li</span> <span style="color:#bf4f24">class</span>=<span style="color:#0b6125">"tabs__btn"</span>>&lt;/<span style="color:#bf4f24">li</span>>
+    &lt;/<span style="color:#bf4f24">ul</span>>
+
+    &lt;<span style="color:#bf4f24">div</span> <span style="color:#bf4f24">class</span>=<span style="color:#0b6125">"tabs__content"</span>>
+        &lt;<span style="color:#bf4f24">div</span> <span style="color:#bf4f24">class</span>=<span style="color:#0b6125">"tabs__item active"</span>>
+
+        &lt;/<span style="color:#bf4f24">div</span>>
+        &lt;<span style="color:#bf4f24">div</span> <span style="color:#bf4f24">class</span>=<span style="color:#0b6125">"tabs__item"</span>>
+
+        &lt;/<span style="color:#bf4f24">div</span>>
+    &lt;/<span style="color:#bf4f24">div</span>>
+&lt;/<span style="color:#bf4f24">div</span>>
+
+
+</pre>
+                                            </div>
+                                            <div class="tabs__item active">
+<pre style="background:#f9f9f9;color:#080808"><span style="color:#bf4f24">.tabs__item</span> {
+  <span style="color:#691c97">display</span><span style="color:#794938">:</span> <span style="color:#b4371f">none</span>;
+
+  &amp;.active {
+    <span style="color:#691c97">display</span><span style="color:#794938">:</span> <span style="color:#b4371f">block</span>;
+  }
+}
+</pre>
+                                            </div>
+                                            <div class="tabs__item">
+                                                <pre style="background:#f9f9f9;color:#080808">(<span style="color:#a71d5d;font-style:italic">function</span>(<span style="color:#794938">$</span>) {
+
+    <span style="color:#691c97">$</span>('<span style="color:#bf4f24">.tabs</span>')<span style="color:#693a17">.each</span>( <span style="color:#a71d5d;font-style:italic">function</span>() {
+
+    <span style="color:#691c97">$</span>('<span style="color:#bf4f24">.tabs__buttons</span>').on(<span style="color:#0b6125">'click'</span>, <span style="color:#0b6125">'.tabs__btn:not(.tabs__btn_active)'</span>, <span style="color:#a71d5d;font-style:italic">function</span> () {
+        <span style="color:#691c97">$</span>(<span style="color:#234a97">this</span>)<span style="color:#693a17">.addClass</span>(<span style="color:#0b6125">'tabs__btn_active'</span>).<span style="color:#693a17">siblings</span>()<span style="color:#693a17">.removeClass</span>(<span style="color:#0b6125">'tabs__btn_active'</span>);
+        <span style="color:#691c97">$</span>(<span style="color:#234a97">this</span>).closest(<span style="color:#0b6125">'.tabs'</span>).<span style="color:#693a17">find</span>('<span style="color:#bf4f24">.tabs__item</span>')<span style="color:#693a17">.removeClass</span>(<span style="color:#0b6125">'active'</span>)<span style="color:#693a17">.eq</span>(<span style="color:#691c97">$</span>(<span style="color:#234a97">this</span>)<span style="color:#693a17">.index</span>())<span style="color:#693a17">.addClass</span>(<span style="color:#0b6125">'active'</span>);
+    });
+      });
+})(jQuery);
+
+</pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    //= html/_footer.html
+</div>
+//= html/_scripts.html
+</body>
+</html>

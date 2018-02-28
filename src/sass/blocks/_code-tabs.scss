@@ -1,0 +1,29 @@
+
+
+.tabs__item {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+
+.tabs__buttons {
+  display: flex;
+}
+
+.tabs__btn {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.tabs__btn_active {
+  background-color: #F9F9F9;
+}
+
+.code_content {
+  height: 400px;
+  overflow-y: scroll;
+  padding-left: 10px;
+  background-color: #F9F9F9;
+}

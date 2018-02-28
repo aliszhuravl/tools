@@ -1,0 +1,22 @@
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.elem_list {
+  li {
+    padding: 10px 0;
+  }
+
+}
+
+a {
+  text-decoration: none;
+  color: #555;
+  font-size: 15px;
+  transition: all 0.3s;
+  &:hover {
+    color: #7accc1;
+    transition: all 0.3s;
+  }
+}

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>L — library</title>
+</head>
+<body>
+<div class="page-container page-main">
+    <header class="header">
+        <div class="header__inner">
+           <p><a href="index.html">Elements library</a></p>
+        </div>
+    </header>
+    <main class="page">
+        <div class="page__inner">
+            <section class="page__item">
+                <h3 style="text-align: center;">Выпадающее меню</h3>
+            </section>
+            <section class="page__item">
+                <div class="category__inner">
+                    <div class="category__item element_item">
+                        <div class="category__content">
+                            <div class="category__header">
+                                <div class="dropdown">
+                                    <div class="dropdown__text">2015</div>
+                                    <ul class="dropdown__list">
+                                        <li class="dropdown__item">2015</li>
+                                        <li class="dropdown__item">2016</li>
+                                        <li class="dropdown__item">2011</li>
+                                        <li class="dropdown__item">2009</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="category__body">
+                                <div class="code__inner">
+
+                                    <div class="tabs tabs-cards">
+                                        <ul class="tabs__buttons">
+                                            <li class="tabs__btn">HTML</li>
+                                            <li class="tabs__btn tabs__btn_active">SCSS</li>
+                                            <li class="tabs__btn">JS</li>
+                                        </ul>
+                                        <div class="tabs__content code_content">
+                                            <div class="tabs__item">
+<pre style="background:#f9f9f9;color:#080808">&lt;<span style="color:#bf4f24">div</span> <span style="color:#bf4f24">class</span>=<span style="color:#0b6125">"dropdown"</span>>
+                                    &lt;<span style="color:#bf4f24">div</span> <span style="color:#bf4f24">class</span>=<span style="color:#0b6125">"dropdown__text"</span>>2015&lt;/<span style="color:#bf4f24">div</span>>
+                                    &lt;<span style="color:#bf4f24">ul</span> <span style="color:#bf4f24">class</span>=<span style="color:#0b6125">"dropdown__list"</span>>
+                                        &lt;<span style="color:#bf4f24">li</span> <span style="color:#bf4f24">class</span>=<span style="color:#0b6125">"dropdown__item"</span>>2015&lt;/<span style="color:#bf4f24">li</span>>
+                                        &lt;<span style="color:#bf4f24">li</span> <span style="color:#bf4f24">class</span>=<span style="color:#0b6125">"dropdown__item"</span>>2016&lt;/<span style="color:#bf4f24">li</span>>
+                                        &lt;<span style="color:#bf4f24">li</span> <span style="color:#bf4f24">class</span>=<span style="color:#0b6125">"dropdown__item"</span>>2011&lt;/<span style="color:#bf4f24">li</span>>
+                                        &lt;<span style="color:#bf4f24">li</span> <span style="color:#bf4f24">class</span>=<span style="color:#0b6125">"dropdown__item"</span>>2009&lt;/<span style="color:#bf4f24">li</span>>
+                                    &lt;/<span style="color:#bf4f24">ul</span>>
+                                &lt;/<span style="color:#bf4f24">div</span>>
+</pre>
+                                            </div>
+                                            <div class="tabs__item active">
+<pre style="background:#f9f9f9;color:#080808"><span style="color:#bf4f24">.dropdown</span> {
+  <span style="color:#691c97">position</span><span style="color:#794938">:</span> <span style="color:#b4371f">relative</span>;
+  <span style="color:#691c97">width</span><span style="color:#794938">:</span> <span style="color:#811f24;font-weight:700">200<span style="color:#794938">px</span></span>;
+}
+
+<span style="color:#bf4f24">.dropdown_opened</span> > <span style="color:#bf4f24">.dropdown__list</span> {
+  <span style="color:#691c97">display</span><span style="color:#794938">:</span> <span style="color:#b4371f">block</span>;
+}
+
+<span style="color:#bf4f24">.dropdown__list</span> {
+  <span style="color:#691c97">position</span><span style="color:#794938">:</span> <span style="color:#b4371f">absolute</span>;
+  <span style="color:#691c97">z-index</span><span style="color:#794938">:</span> <span style="color:#811f24;font-weight:700">11</span>;
+  <span style="color:#691c97">display</span><span style="color:#794938">:</span> <span style="color:#b4371f">none</span>;
+  <span style="color:#691c97">list-style</span><span style="color:#794938">:</span> <span style="color:#b4371f">none</span>;
+  <span style="color:#691c97">background-color</span><span style="color:#794938">:</span> <span style="color:#811f24;font-weight:700">#fff</span>;
+  <span style="color:#691c97">padding</span><span style="color:#794938">:</span> <span style="color:#811f24;font-weight:700">0</span>;
+  <span style="color:#691c97">margin</span><span style="color:#794938">:</span> <span style="color:#811f24;font-weight:700">0</span>;
+  <span style="color:#691c97">width</span><span style="color:#794938">:</span> <span style="color:#811f24;font-weight:700">100<span style="color:#794938">%</span></span>;
+}
+
+<span style="color:#bf4f24">.dropdown_opened</span> > <span style="color:#bf4f24">.dropdown__text</span><span style="color:#bf4f24">:after</span> {
+  transform<span style="color:#794938">:</span> rotate(<span style="color:#811f24;font-weight:700">0<span style="color:#794938">deg</span></span>);
+}
+
+<span style="color:#bf4f24">.dropdown__text</span> {
+  <span style="color:#691c97">position</span><span style="color:#794938">:</span> <span style="color:#b4371f">relative</span>;
+  <span style="color:#691c97">color</span><span style="color:#794938">:</span> <span style="color:#811f24;font-weight:700">#000</span>;
+  <span style="color:#691c97">background-color</span><span style="color:#794938">:</span> <span style="color:#811f24;font-weight:700">#fff</span>;
+  <span style="color:#691c97">cursor</span><span style="color:#794938">:</span> <span style="color:#b4371f">pointer</span>;
+  <span style="color:#691c97">padding</span><span style="color:#794938">:</span> <span style="color:#811f24;font-weight:700">10<span style="color:#794938">px</span></span> <span style="color:#811f24;font-weight:700">20<span style="color:#794938">px</span></span>;
+  <span style="color:#691c97">border-bottom</span><span style="color:#794938">:</span> <span style="color:#811f24;font-weight:700">1<span style="color:#794938">px</span></span> <span style="color:#b4371f">solid</span> $color-<span style="color:#b4371f">gray</span><span style="color:#811f24;font-weight:700">-10</span>;
+}
+
+<span style="color:#bf4f24">.dropdown__text</span><span style="color:#bf4f24">:after</span> {
+  <span style="color:#691c97">position</span><span style="color:#794938">:</span> <span style="color:#b4371f">absolute</span>;
+  <span style="color:#691c97">right</span><span style="color:#794938">:</span> <span style="color:#811f24;font-weight:700">24<span style="color:#794938">px</span></span>;
+  <span style="color:#691c97">top</span><span style="color:#794938">:</span> <span style="color:#811f24;font-weight:700">13<span style="color:#794938">px</span></span>;
+  <span style="color:#691c97">content</span><span style="color:#794938">:</span> <span style="color:#0b6125">'▲'</span>;
+  <span style="color:#691c97">color</span><span style="color:#794938">:</span> <span style="color:#811f24;font-weight:700">#000</span>;
+  <span style="color:#691c97">font-size</span><span style="color:#794938">:</span> <span style="color:#811f24;font-weight:700">10<span style="color:#794938">px</span></span>;
+  transform<span style="color:#794938">:</span> rotate(<span style="color:#811f24;font-weight:700">180<span style="color:#794938">deg</span></span>);
+  transition<span style="color:#794938">:</span> transform <span style="color:#811f24;font-weight:700">.2<span style="color:#794938">s</span></span>;
+}
+
+<span style="color:#bf4f24">.dropdown__item</span> {
+  <span style="color:#691c97">cursor</span><span style="color:#794938">:</span> <span style="color:#b4371f">pointer</span>;
+  <span style="color:#691c97">padding</span><span style="color:#794938">:</span> <span style="color:#811f24;font-weight:700">10<span style="color:#794938">px</span></span> <span style="color:#811f24;font-weight:700">20<span style="color:#794938">px</span></span>;
+
+}
+
+<span style="color:#bf4f24">.dropdown__item</span><span style="color:#bf4f24">:hover</span> {
+  <span style="color:#691c97">background-color</span><span style="color:#794938">:</span> $color-<span style="color:#b4371f">gray</span><span style="color:#811f24;font-weight:700">-10</span>;
+}
+</pre>
+                                            </div>
+                                            <div class="tabs__item">
+<pre style="background:#f9f9f9;color:#080808"><span style="color:#794938">$</span>(<span style="color:#0b6125">'.dropdown'</span>).each(<span style="color:#a71d5d;font-style:italic">function</span> () {
+
+    <span style="color:#5a525f;font-style:italic">// Cache the number of options</span>
+    <span style="color:#a71d5d;font-style:italic">var</span> <span style="color:#794938">$</span>dropdown <span style="color:#794938">=</span> <span style="color:#794938">$</span>(<span style="color:#234a97">this</span>),
+        <span style="color:#794938">$</span>dropdowns <span style="color:#794938">=</span> <span style="color:#794938">$</span>(<span style="color:#0b6125">'.dropdown'</span>).not(<span style="color:#234a97">this</span>),
+        <span style="color:#794938">$</span>dropdownText <span style="color:#794938">=</span> <span style="color:#794938">$</span>dropdown.<span style="color:#693a17">find</span>(<span style="color:#0b6125">'.dropdown__text'</span>),
+        <span style="color:#794938">$</span>dropdownList <span style="color:#794938">=</span> <span style="color:#794938">$</span>dropdown.<span style="color:#693a17">find</span>(<span style="color:#0b6125">'.dropdown__list'</span>),
+        <span style="color:#794938">$</span>dropdownListItems <span style="color:#794938">=</span> <span style="color:#794938">$</span>dropdown.<span style="color:#693a17">find</span>(<span style="color:#0b6125">'.dropdown__item'</span>);
+
+    <span style="color:#5a525f;font-style:italic">// Show the unordered list when the styled div is clicked (also hides it if the div is clicked again)</span>
+    <span style="color:#794938">$</span>dropdown.on(<span style="color:#0b6125">'click'</span>, <span style="color:#a71d5d;font-style:italic">function</span>(e) {
+        e.stopPropagation();
+        <span style="color:#794938">$</span>dropdowns.removeClass(<span style="color:#0b6125">'dropdown_opened'</span>);
+        <span style="color:#794938">$</span>dropdowns.<span style="color:#693a17">find</span>(<span style="color:#0b6125">'.dropdown__list'</span>).slideUp(<span style="color:#811f24;font-weight:700">250</span>);
+
+        <span style="color:#794938">if</span> (<span style="color:#794938">$</span>dropdown.hasClass(<span style="color:#0b6125">'dropdown_opened'</span>)) {
+            <span style="color:#794938">$</span>dropdown.removeClass(<span style="color:#0b6125">'dropdown_opened'</span>);
+            <span style="color:#794938">$</span>dropdown.<span style="color:#693a17">find</span>(<span style="color:#0b6125">'.dropdown__list'</span>).slideUp(<span style="color:#811f24;font-weight:700">250</span>);
+        } <span style="color:#794938">else</span> {
+            <span style="color:#794938">$</span>dropdown.addClass(<span style="color:#0b6125">'dropdown_opened'</span>);
+            <span style="color:#794938">$</span>dropdown.<span style="color:#693a17">find</span>(<span style="color:#0b6125">'.dropdown__list'</span>).slideDown(<span style="color:#811f24;font-weight:700">250</span>);
+        }
+    });
+
+    <span style="color:#5a525f;font-style:italic">// Hides the unordered list when a list item is clicked and updates the styled div to show the selected list item</span>
+    <span style="color:#5a525f;font-style:italic">// Updates the select element to have the value of the equivalent option</span>
+    <span style="color:#794938">$</span>dropdownListItems.<span style="color:#693a17">click</span>(<span style="color:#a71d5d;font-style:italic">function</span>(e) {
+        e.stopPropagation();
+        <span style="color:#794938">$</span>dropdownText.<span style="color:#b4371f">text</span>(<span style="color:#794938">$</span>(<span style="color:#234a97">this</span>).<span style="color:#b4371f">text</span>());
+        <span style="color:#794938">$</span>dropdown.removeClass(<span style="color:#0b6125">'dropdown_opened'</span>);
+        <span style="color:#794938">$</span>dropdownList.slideUp(<span style="color:#811f24;font-weight:700">150</span>);
+        <span style="color:#794938">if</span>(<span style="color:#794938">$</span>(<span style="color:#234a97">this</span>).hasClass(<span style="color:#0b6125">'tabs__btn'</span>)){
+            <span style="color:#794938">$</span>(<span style="color:#234a97">this</span>).addClass(<span style="color:#0b6125">'tabs__btn_active'</span>).siblings().removeClass(<span style="color:#0b6125">'tabs__btn_active'</span>);
+            <span style="color:#794938">$</span>(<span style="color:#234a97">this</span>).closest(<span style="color:#0b6125">'.tabs'</span>).<span style="color:#693a17">find</span>(<span style="color:#0b6125">'.tabs__item'</span>).removeClass(<span style="color:#0b6125">'active'</span>).eq(<span style="color:#794938">$</span>(<span style="color:#234a97">this</span>).<span style="color:#b4371f">index</span>()).addClass(<span style="color:#0b6125">'active'</span>);
+        }
+        <span style="color:#794938">if</span>(<span style="color:#794938">$</span>(<span style="color:#234a97">this</span>).hasClass(<span style="color:#0b6125">'recall_li'</span>)) {
+            <span style="color:#794938">$</span>(<span style="color:#0b6125">'.recall_li'</span>).each (<span style="color:#a71d5d;font-style:italic">function</span>() {
+                <span style="color:#794938">if</span> (<span style="color:#794938">$</span>(<span style="color:#234a97">this</span>).<span style="color:#b4371f">data</span>(<span style="color:#0b6125">'id'</span>) <span style="color:#794938">===</span> <span style="color:#0b6125">'ans'</span>) {
+                    <span style="color:#794938">$</span>(<span style="color:#234a97">this</span>).click (<span style="color:#a71d5d;font-style:italic">function</span>() {<span style="color:#794938">$</span>(<span style="color:#0b6125">'#modal-answer'</span>).modal();});
+                }
+                <span style="color:#794938">if</span> (<span style="color:#794938">$</span>(<span style="color:#234a97">this</span>).<span style="color:#b4371f">data</span>(<span style="color:#0b6125">'id'</span>) <span style="color:#794938">===</span> <span style="color:#0b6125">'req'</span>) {
+                    <span style="color:#794938">$</span>(<span style="color:#234a97">this</span>).click (<span style="color:#a71d5d;font-style:italic">function</span>() {<span style="color:#794938">$</span>(<span style="color:#0b6125">'#modal-request'</span>).modal();});
+                }
+                <span style="color:#794938">if</span> (<span style="color:#794938">$</span>(<span style="color:#234a97">this</span>).<span style="color:#b4371f">data</span>(<span style="color:#0b6125">'id'</span>) <span style="color:#794938">===</span> <span style="color:#0b6125">'demo'</span>) {
+                    <span style="color:#794938">$</span>(<span style="color:#234a97">this</span>).click (<span style="color:#a71d5d;font-style:italic">function</span>() {<span style="color:#794938">$</span>(<span style="color:#0b6125">'#modal-demo'</span>).modal();});
+                }
+                <span style="color:#794938">if</span> (<span style="color:#794938">$</span>(<span style="color:#234a97">this</span>).<span style="color:#b4371f">data</span>(<span style="color:#0b6125">'id'</span>) <span style="color:#794938">===</span> <span style="color:#0b6125">'rec'</span>) {
+                    <span style="color:#794938">$</span>(<span style="color:#234a97">this</span>).click (<span style="color:#a71d5d;font-style:italic">function</span>() {<span style="color:#794938">$</span>(<span style="color:#0b6125">'#modal-recall'</span>).modal();});
+                }
+                <span style="color:#794938">if</span> (<span style="color:#794938">$</span>(<span style="color:#234a97">this</span>).<span style="color:#b4371f">data</span>(<span style="color:#0b6125">'id'</span>) <span style="color:#794938">===</span> <span style="color:#0b6125">'err'</span>) {
+                    <span style="color:#794938">$</span>(<span style="color:#234a97">this</span>).click (<span style="color:#a71d5d;font-style:italic">function</span>() {<span style="color:#794938">$</span>(<span style="color:#0b6125">'#modal-error'</span>).modal();});
+                }
+                <span style="color:#794938">if</span> (<span style="color:#794938">$</span>(<span style="color:#234a97">this</span>).<span style="color:#b4371f">data</span>(<span style="color:#0b6125">'id'</span>) <span style="color:#794938">===</span> <span style="color:#0b6125">'sale'</span>) {
+                    <span style="color:#794938">$</span>(<span style="color:#234a97">this</span>).click (<span style="color:#a71d5d;font-style:italic">function</span>() {<span style="color:#794938">$</span>(<span style="color:#0b6125">'#modal-sale'</span>).modal();});
+                }
+            });
+        }
+    });
+
+    <span style="color:#5a525f;font-style:italic">// Hides the unordered list when clicking outside of it</span>
+    <span style="color:#794938">$</span>(<span style="color:#691c97">document</span>.<span style="color:#b4371f">body</span>).<span style="color:#693a17">click</span>( <span style="color:#a71d5d;font-style:italic">function</span>() {
+        <span style="color:#794938">$</span>dropdown.removeClass(<span style="color:#0b6125">'dropdown_opened'</span>);
+        <span style="color:#794938">$</span>dropdownList.slideUp(<span style="color:#811f24;font-weight:700">150</span>);
+    });
+});
+</pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__inner">
+            <p>Footer</p>
+        </div>
+    </footer>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/libs/jquery/jquery-2.2.4.min.js"><\/script>')</script>
+<script src="js/main.js"></script>
+</body>
+</html>

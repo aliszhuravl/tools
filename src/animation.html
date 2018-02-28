@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    //= html/_head.html
+    <title>L - library</title>
+</head>
+<body>
+<div class="page-container page-main">
+    //= html/_header.html
+    <main class="page">
+        <div class="page__inner">
+            <section class="page__item">
+                <h3 style="text-align: center;">Анимация</h3>
+            </section>
+            <section class="page__item">
+                <div class="category__inner">
+                    <div class="category__item element_item">
+                        <div class="category__content">
+                            <div class="category__header">
+                                <div class="anim1"></div>
+                                <h3 style="text-align: center;">Смена фона</h3>
+                            </div>
+                            <div class="category__body">
+                                <div class="code__inner">
+
+                                    <div class="tabs tabs-cards">
+                                        <ul class="tabs__buttons">
+                                            <li class="tabs__btn">HTML</li>
+                                            <li class="tabs__btn tabs__btn_active">SCSS</li>
+                                            <li class="tabs__btn">JS</li>
+                                        </ul>
+                                        <div class="tabs__content code_content">
+                                            <div class="tabs__item">
+
+                                            </div>
+                                            <div class="tabs__item active">
+<pre style="background:#f9f9f9;color:#080808"><span style="color:#bf4f24">.anim1</span> {
+  <span style="color:#691c97">height</span><span style="color:#794938">:</span> <span style="color:#811f24;font-weight:700">50<span style="color:#794938">px</span></span>;
+  <span style="color:#691c97">width</span><span style="color:#794938">:</span> <span style="color:#811f24;font-weight:700">100<span style="color:#794938">px</span></span>;
+  animation<span style="color:#794938">:</span> fone <span style="color:#811f24;font-weight:700">5<span style="color:#794938">s</span></span> infinite ease-in-out;
+}
+
+@keyframes fone {
+  0% {
+    <span style="color:#691c97">background-color</span><span style="color:#794938">:</span> <span style="color:#811f24;font-weight:700">#001F3F</span>;
+  }
+  20% {
+    <span style="color:#691c97">background-color</span><span style="color:#794938">:</span> <span style="color:#811f24;font-weight:700">#FF4136</span>;
+  }
+  40% {
+    <span style="color:#691c97">background-color</span><span style="color:#794938">:</span> <span style="color:#811f24;font-weight:700">#fff000</span>;
+  }
+  60% {
+    <span style="color:#691c97">background-color</span><span style="color:#794938">:</span> <span style="color:#811f24;font-weight:700">#107e00</span>;
+  }
+  100% {
+    <span style="color:#691c97">background-color</span><span style="color:#794938">:</span> <span style="color:#811f24;font-weight:700">#001F3F</span>;
+  }
+}
+</pre>
+                                            </div>
+                                            <div class="tabs__item">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="category__item element_item">
+                        <div class="category__content">
+                            <div class="category__header">
+                                <div class="element"></div>
+                                <h3 style="text-align: center;">Смена размера, цвета, формы</h3>
+                            </div>
+                            <div class="category__body">
+                                <div class="code__inner">
+
+                                    <div class="tabs tabs-cards">
+                                        <ul class="tabs__buttons">
+                                            <li class="tabs__btn">HTML</li>
+                                            <li class="tabs__btn tabs__btn_active">SCSS</li>
+                                            <li class="tabs__btn">JS</li>
+                                        </ul>
+                                        <div class="tabs__content code_content">
+                                            <div class="tabs__item">
+
+                                            </div>
+                                            <div class="tabs__item active">
+<pre style="background:#f9f9f9;color:#080808"><span style="color:#bf4f24">.element</span> {
+  <span style="color:#691c97">height</span><span style="color:#794938">:</span> <span style="color:#811f24;font-weight:700">50<span style="color:#794938">px</span></span>;
+  <span style="color:#691c97">width</span><span style="color:#794938">:</span> <span style="color:#811f24;font-weight:700">50<span style="color:#794938">px</span></span>;
+  <span style="color:#691c97">margin</span><span style="color:#794938">:</span> <span style="color:#811f24;font-weight:700">0</span> <span style="color:#b4371f">auto</span>;
+  <span style="color:#691c97">background-color</span><span style="color:#794938">:</span> <span style="color:#b4371f">red</span>;
+  animation-name<span style="color:#794938">:</span> stretch;
+  animation-duration<span style="color:#794938">:</span> <span style="color:#811f24;font-weight:700">1.5<span style="color:#794938">s</span></span>;
+  animation-timing-function<span style="color:#794938">:</span> ease-out;
+  animation-delay<span style="color:#794938">:</span> <span style="color:#811f24;font-weight:700">0</span>;
+  animation-<span style="color:#691c97">direction</span><span style="color:#794938">:</span> alternate;
+  animation-iteration-count<span style="color:#794938">:</span> infinite;
+  animation-fill-mode<span style="color:#794938">:</span> <span style="color:#b4371f">none</span>;
+  animation-play-state<span style="color:#794938">:</span> running;
+}
+
+@keyframes stretch {
+  0% {
+    transform<span style="color:#794938">:</span> scale(<span style="color:#811f24;font-weight:700">.3</span>);
+    <span style="color:#691c97">background-color</span><span style="color:#794938">:</span> <span style="color:#b4371f">red</span>;
+    <span style="color:#691c97">border-radius</span><span style="color:#794938">:</span> <span style="color:#811f24;font-weight:700">100<span style="color:#794938">%</span></span>;
+  }
+  50% {
+    <span style="color:#691c97">background-color</span><span style="color:#794938">:</span> <span style="color:#b4371f">orange</span>;
+  }
+  100% {
+    transform<span style="color:#794938">:</span> scale(<span style="color:#811f24;font-weight:700">1.5</span>);
+    <span style="color:#691c97">background-color</span><span style="color:#794938">:</span> <span style="color:#b4371f">yellow</span>;
+  }
+}
+</pre>
+                                            </div>
+                                            <div class="tabs__item">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="category__item element_item">
+                        <div class="category__content">
+                            <div class="category__header">
+                                <div class="element"></div>
+                                <h3 style="text-align: center;">Смена размера, цвета, формы</h3>
+                            </div>
+                            <div class="category__body">
+                                <div class="code__inner">
+
+                                    <div class="tabs tabs-cards">
+                                        <ul class="tabs__buttons">
+                                            <li class="tabs__btn">HTML</li>
+                                            <li class="tabs__btn tabs__btn_active">SCSS</li>
+                                            <li class="tabs__btn">JS</li>
+                                        </ul>
+                                        <div class="tabs__content code_content">
+                                            <div class="tabs__item">
+
+                                            </div>
+                                            <div class="tabs__item active">
+<pre style="background:#f9f9f9;color:#080808"><span style="color:#bf4f24">.element</span> {
+  <span style="color:#691c97">height</span><span style="color:#794938">:</span> <span style="color:#811f24;font-weight:700">50<span style="color:#794938">px</span></span>;
+  <span style="color:#691c97">width</span><span style="color:#794938">:</span> <span style="color:#811f24;font-weight:700">50<span style="color:#794938">px</span></span>;
+  <span style="color:#691c97">margin</span><span style="color:#794938">:</span> <span style="color:#811f24;font-weight:700">0</span> <span style="color:#b4371f">auto</span>;
+  <span style="color:#691c97">background-color</span><span style="color:#794938">:</span> <span style="color:#b4371f">red</span>;
+  animation-name<span style="color:#794938">:</span> stretch;
+  animation-duration<span style="color:#794938">:</span> <span style="color:#811f24;font-weight:700">1.5<span style="color:#794938">s</span></span>;
+  animation-timing-function<span style="color:#794938">:</span> ease-out;
+  animation-delay<span style="color:#794938">:</span> <span style="color:#811f24;font-weight:700">0</span>;
+  animation-<span style="color:#691c97">direction</span><span style="color:#794938">:</span> alternate;
+  animation-iteration-count<span style="color:#794938">:</span> infinite;
+  animation-fill-mode<span style="color:#794938">:</span> <span style="color:#b4371f">none</span>;
+  animation-play-state<span style="color:#794938">:</span> running;
+}
+
+@keyframes stretch {
+  0% {
+    transform<span style="color:#794938">:</span> scale(<span style="color:#811f24;font-weight:700">.3</span>);
+    <span style="color:#691c97">background-color</span><span style="color:#794938">:</span> <span style="color:#b4371f">red</span>;
+    <span style="color:#691c97">border-radius</span><span style="color:#794938">:</span> <span style="color:#811f24;font-weight:700">100<span style="color:#794938">%</span></span>;
+  }
+  50% {
+    <span style="color:#691c97">background-color</span><span style="color:#794938">:</span> <span style="color:#b4371f">orange</span>;
+  }
+  100% {
+    transform<span style="color:#794938">:</span> scale(<span style="color:#811f24;font-weight:700">1.5</span>);
+    <span style="color:#691c97">background-color</span><span style="color:#794938">:</span> <span style="color:#b4371f">yellow</span>;
+  }
+}
+</pre>
+                                            </div>
+                                            <div class="tabs__item">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </main>
+    //= html/_footer.html
+</div>
+//= html/_scripts.html
+</body>
+</html>
