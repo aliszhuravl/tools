@@ -1,5 +1,5 @@
-<h2>HTML/SCSS/JS шаблон для новых репозиториев</h2>
-
-<p>1) git init</p>
-<p>2) npm i --save-dev gulp gulp-watch gulp-autoprefixer gulp-uglify gulp-sass gulp-sourcemaps gulp-rigger gulp-minify-css gulp-csscomb gulp-imagemin imagemin-pngquant browser-sync rimraf gulp-typograf gulp-svgo gulp-merge-media-queries</p>
-<p>3) gulp full for first install, then gulp for dev</p>
+<h2>Инструменты для создания сайта</h2>
+<p>Эта идея возникла, когда я работала в агентстве, там же и был начат этот проект. К сожалению, развития там это не получило, поэтому библиотека стала моим личным проектом, который я продолжаю развивать далее.</p>
+<a href="https://aliszhuravl.github.io/tools/web/index.html">Макет</a>
+<p>Пока что там только инструменты и плагины</p>
+<p>В будущем планируется добавить основные шаблоны для сайтов, лендингов и типовых страниц и блоков.</p>
